@@ -1,0 +1,59 @@
+<br>
+<div class="form-group" style="width: 50%; margin: 0 auto;">
+  <h3 class="text-center">Select Sector for prediction:</h3>
+
+<select class="form-select" name="selectedOption" id="optionSelect"[(ngModel)]="selectedOption">
+  <option value="fresh-water">Fresh water</option>
+  <option value="co2-emission">CO2 emission</option>
+  <option value="resilience">Resilience</option>
+  <option value="famine">Famine</option>
+</select>
+
+</div>
+
+<br>
+
+<div *ngIf="selectedOption=='co2-emission'" style="width: 50%; margin: 0 auto;">
+  <h3 class="text-center">CO2 emissions prediction </h3>
+<form>
+  <div class="form-group"  style="width: 50%; margin: 0 auto;">
+    <label for="countrySelect">Select Country:</label>
+    <select class="form-control" id="countrySelect" [(ngModel)]="selectedCountry" name="country">
+      <option *ngFor="let country of countries" [value]="country">{{ country }}</option>
+    </select>
+  </div>
+
+  <div class="form-group"  style="width: 50%; margin: 0 auto;">
+    <label for="dateInput">Target Date:</label>
+    <input type="number" class="form-control" id="dateInput" [(ngModel)]="date" name="date" min="2023" >
+  </div>
+<br>
+<div    style="width: 50%; margin: 0 auto;">
+
+  <button type="submit" class="btn btn-primary"   (click)="submitForm()">Predict</button>
+</div>
+</form>
+</div>
+
+
+<div *ngIf="selectedOption=='fresh-water'" style="width: 50%; margin: 0 auto;">
+  <h3 class="text-center">Fresh water prediction </h3>
+<form>
+  <div class="form-group"  style="width: 50%; margin: 0 auto;">
+    <label for="countrySelect">Select Country:</label>
+    <select class="form-control" id="countrySelect" [(ngModel)]="selectedCountry" name="country">
+      <option *ngFor="let country of countries" [value]="country">{{ country }}</option>
+    </select>
+  </div>
+
+  <div class="form-group"  style="width: 50%; margin: 0 auto;">
+    <label for="dateInput">Target Date:</label>
+    <input type="number" class="form-control" id="dateInput" [(ngModel)]="date" name="date" min="2023" >
+  </div>
+<br>
+<div    style="width: 50%; margin: 0 auto;">
+
+  <button type="submit" class="btn btn-primary"  (click)="submitForm1()">Predict</button>
+</div>
+</form>
+</div>
