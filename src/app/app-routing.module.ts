@@ -5,10 +5,13 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { PredictionComponent } from './dashboard/prediction/prediction.component';
 import { UserGuardService } from './services/user-guard.service';
 import { UpdateComponent } from './dashboard/update/update.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-
+  {path: 'login', component: LoginComponent },
+  {path: 'Signup', component: SignupComponent },
   
   {
     path: 'd',

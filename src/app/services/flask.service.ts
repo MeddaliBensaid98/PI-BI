@@ -29,4 +29,10 @@ export class FlaskService {
 getcounty():Observable<any>
 {return this.http.get<string[]>(`${this.path}/distinct_countries`);
 } 
+predectionpoverty(data:any):Observable<any>
+{return this.http.post(`${this.path}/predictpoverty`,data);
+} 
+predectionhunger(data:any):Observable<any>
+{return this.http.post(`${this.path}/predict_hunger`,data);
+} 
 }

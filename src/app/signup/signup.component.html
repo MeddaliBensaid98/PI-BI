@@ -1,0 +1,154 @@
+<app-header></app-header>
+<div class="container">
+	<form action="#">
+		<div class="row justify-content-md-center">
+			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+				<div class="login-screen">
+					<div class="login-box">
+						<a href="#" class="login-logo">
+							<img src="//ssl.gstatic.com/accounts/ui/logo_2x.png" alt="Bootdey bootstrap snippets bootdey">
+						</a>
+						<div class="row gutters">
+							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+								<div class="form-group">
+                                    <input
+                                    type="number"
+                                    id="orangeForm-identity"
+                                    class="form-control validate"
+                                    [(ngModel)]="cin"
+                                    name="cin"
+                                    placeholder="CIN"
+                                  />
+								</div>
+							</div>
+							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+								<div class="form-group">
+                                    <input
+                                    type="text"
+                                    id="orangeForm-surname2"
+                                    class="form-control "
+                                    [(ngModel)]="nom"
+                                    name="nom"
+                                    placeholder="NOM"
+                                  />
+								</div>
+							</div>
+							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+								<div class="form-group">
+                                    <input
+                                    type="text"
+                                    id="orangeForm-surname"
+                                    class="form-control "
+                                    [(ngModel)]="surname"
+                                    name="surname"
+                                    placeholder="SURNAME"
+                                  />
+								</div>
+							</div>
+							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+								<div class="form-group">
+                                    <input
+                                    type="date"
+                                    id="orangeForm-birthdate"
+                                    class="form-control validate"
+                                    [(ngModel)]="bd"
+                                    name="bd"
+                                  />
+								</div>
+							</div>
+						</div>
+                        <div class="row gutters">
+							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+								<div class="form-group">
+                                    <input
+                                    type="text"
+                                    id="orangeForm-username"
+                                    class="form-control validate"
+                                    [(ngModel)]="username2"
+                                    name="username2"
+                                    placeholder="USERNAME"
+                                  />
+								</div>
+							</div>
+							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+								<div class="form-group">
+                                    <input
+                                    type="email"
+                                    id="orangeForm-email"
+                                    class="form-control validate"
+                                    [(ngModel)]="email"
+                                    name="email"
+                                    placeholder="Email"
+                                  />
+                                  
+								</div>
+							</div>
+							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+								<div class="form-group">
+                                    <input
+                                    type="password"
+                                    id="orangeForm-password"
+                                    class="form-control validate"
+                                    [(ngModel)]="password2"
+                                    name="password2"
+                                    placeholder="password"
+                                  />
+                                  
+								</div>
+							</div>
+							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+								<div class="form-group">
+                                    <input
+                                    type="password"
+                                    id="orangeForm-password2"
+                                    class="form-control validate"
+                                    [(ngModel)]="repassword2"
+                                    name="repassword2"
+                                    placeholder="Repassword"
+                                  />
+								</div>
+							</div>
+						</div>
+                        <div class="row gutters">
+							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+								<div class="form-group">
+                                    <input
+                                    type="number"
+                                    id="orangeForm-phone"
+                                    class="form-control validate"
+                                    [(ngModel)]="tel"
+                                    name="tel"
+                                    placeholder="Tel"
+                                  />
+								</div>
+							</div>
+							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Last Name">
+								</div>
+							</div>
+							
+						
+						</div>
+                      
+						<div class="actions clearfix">
+							<button type="submit" class="btn btn-primary btn-block" (click)="register()">Signup</button>
+						</div>
+						<div class="or">
+							<span>or signup using</span>
+						</div>
+						<div class="row gutters">
+							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+								<button type="submit" class="btn btn-tw btn-block">Twitter</button>
+							</div>
+							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+								<button type="submit" class="btn btn-fb btn-block">Facebook</button>
+							</div>
+						</div>
+						<a href="login" class="additional-link">Have an Account? <span>Login Now</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>

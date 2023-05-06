@@ -35,6 +35,9 @@ import { FormsModule } from '@angular/forms';
 import { PredictionComponent } from './dashboard/prediction/prediction.component';
 import { FooterComponent } from './footer/footer.component';
 import { UpdateComponent } from './dashboard/update/update.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +46,10 @@ import { UpdateComponent } from './dashboard/update/update.component';
      DashboardComponent,
      PredictionComponent,
      FooterComponent,
-     UpdateComponent
+     UpdateComponent,
+     LoginComponent,
+     SignupComponent,
+     HeaderComponent
   ],
   imports: [
     BrowserModule,RouterModule,HttpClientModule,

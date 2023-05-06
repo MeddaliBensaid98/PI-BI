@@ -1,0 +1,55 @@
+<app-header></app-header>
+<div class="container">
+	<form action="#">
+		<div class="row justify-content-md-center">
+			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+				<div class="login-screen">
+					<div class="login-box">
+						<a href="#" class="login-logo">
+							<img src="//ssl.gstatic.com/accounts/ui/logo_2x.png" alt="Bootdey bootstrap snippets bootdey">
+						</a>
+						<div class="row gutters">
+							
+								<div class="form-group">
+                                    <input
+                                    type="text"
+                                    id="orangeForm-name"
+                                    class="form-control validate"
+                                    [(ngModel)]="username"
+                                    name="username"
+                                    placeholder="Username"
+                                  />
+								</div>
+						
+						
+					
+						
+						</div>
+                        <div class="row gutters">
+                            <div class="form-group">
+                        <input
+            type="password"
+            id="orangeForm-pass"
+            class="form-control validate"
+            [(ngModel)]="password"
+            name="password"
+            placeholder="password"
+          /></div>
+                        </div>
+						<div class="actions clearfix">
+							<button type="submit" class="btn btn-primary btn-block" (click)="onSubmit()">SignIn</button>
+						</div>
+						
+                        <a href="Signup" class="additional-link">You do not have an account ? <span>Sign Up</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
